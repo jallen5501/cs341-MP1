@@ -1,0 +1,41 @@
+Script started on Sat 24 Sep 2016 04:05:34 PM EDT
+tuser@tutor-vserver:~$ cat ReadMe.txt 
+Hello I'm having a hard time working with the VM and that is why I am handing this typescript in late. I Setting it up was particularly difficult on my MAC but It won't affect my future assignments.
+`
+tuser@tutor-vserver:~$ mtip -f tutor.lnx
+For command help, type ~?
+For help on args, rerun without args
+Code starts at 0x100100
+Using board # 1 
+~downloading tutor.lnx
+
+........Done.
+
+Download done, setting EIP to 100100.
+Tutor> go 100100
+     cmd    help message
+      md    Memory display: MD <hexaddress>
+       s    Stop
+       h    Help: <cmd>
+      ms    Memory set: MS <hexaddress> <new_value>
+PC-tutor> h ms
+Memory set: MS <hexaddress> <new_value>
+PC-tutor> s
+Exception 6 at EIP=0000000f: Invalid opcode
+Tutor> md 101db0
+00101db0    ac 1d 10 00 28 82 06 00 00 00 00 00 00 00 00 00 ....(...........
+Tutor> ms 101db0 ab
+Tutor> md 101db0
+00101db0    ab 1d 10 00 28 82 06 00 00 00 00 00 00 00 00 00 ....(...........
+Tutor> h ms
+Memory Set        : MS <addr> <val> [<val>...]
+Tutor> s
+No such command: s, use h command for help
+Tutor> 
+Tutor> 
+Quit handler: 
+killing process 1939 Leaving board #1
+tuser@tutor-vserver:~$ exit
+exit
+
+Script done on Sat 24 Sep 2016 04:08:07 PM EDT
